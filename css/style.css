@@ -1,5 +1,33 @@
-.header01 {
-    font-family: 'Courier New', Courier, monospace;
+*{
+    box-sizing: border-box;
+}
+
+
+header {
     color: #fff;
     background-color: #000;
+
+}
+
+/*Place all content within header in a wrapper that has a max-width of 940px and center in the middle of the page. This will be a task that is repeated for each section so creating a wrapper class would be ideal.*/
+.wrapper {
+max-width: 940px;
+margin: 0 auto;
+align-self: center;
+}
+/*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+
 }
