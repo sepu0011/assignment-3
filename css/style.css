@@ -2,26 +2,38 @@
     box-sizing: border-box;
 }
 
+/* Header
+
+Update background color to #000.
+Change font color to #fff. */
 
 header {
     color: #fff;
     background-color: #000;
-
 }
-
-/*Place all content within header in a wrapper that has a max-width of 940px and center in the middle of the page. This will be a task that is repeated for each section so creating a wrapper class would be ideal.*/
+/* Place all content within header in a wrapper that has a max-width of 940px and center in the middle of the page. This will be a task that is repeated for each section so creating a wrapper class would be ideal. */
 .wrapper {
-max-width: 940px;
-margin: 0 auto;
-align-self: center;
+    max-width: 940px;
+    margin: auto;
+    align-self: center;
 }
+
 /*Adjust name to be on the left and the main navigation to display on the right using flexbox.*/
 
 header .wrapper {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/* header .wrapper {
+    display: flex;
     align-items: center;
     text-align: left;
-}
+    flex
+} */
+
+/* Change the navigation items to line up beside one another. */
 
 ul {
     display: flex;
@@ -31,47 +43,94 @@ ul {
     justify-content: space-between;
 }
 
+/* Add space in between each navigation link.
+Align the name and navigation.  
+-------------------------------------------*/
+
+/* Hero section
+
+Set the height of the section to 600px.
+Add a background image to the section and adjust properties so that it covers the entire area and the focal point is in the center of the image.
+Apply a grayscale filter of 70%. */
+
+#hero {
+    height: 600px;
+    background-image: url(../images/hands-typing.jpg);
+    background-size: cover;
+    filter: grayscale(70%);
+}
+    /* 
+    Set your h1 text to have a max-width of 60%.
+    Add a black background color to your h1 text using rgba so that the opacity of the color is set to 50%.
+    Apply a text shadow to the white h1 text to separate it from the background a bit more. 
+    Use flexbox properties to center the text both horizontally and vertically in the middle of the hero section. */
+#hero h1 {
+    
+    max-width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-shadow: 5px 5px 10px black;
+
+    
+}
+
+
+
 /*My Work section
-Place all content within this section in a wrapper that has a max-width of 940px and center in the middle of the page.
-Set a max width on the heading and introduction text for the section and align the text in the center.
-Place all images in that section in a grid using grid areas.*/
-#work {
+Place all content within this section in a wrapper that has a max-width of 940px and center in the middle of the page.*/
+.work-wrapper {
     max-width: 940px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    object-position: center;
 }
+/* Set a max width on the heading and introduction text for the section and align the text in the center.*/
+.work-wrapper h2, .work-wrapper p {
+    max-width: 70%;
+    color: red;
+    text-align: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    object-position: center;
+    
+}
+
+/*Place all images in that section in a grid using grid areas. */
 
 .work-images {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .work-images img:nth-child(1) {
-display: grid;
-grid-row: 1 / 1;
-grid-column: 1 / span 1;
+
+    grid-row: 1 / 1;
+    grid-column: 1 / span 1;
 } 
 
 .work-images img:nth-child(2) {
-    display: grid;
+    
     grid-row: 1 / 1;
-    grid-column: 2 / span 2;
+    grid-column: 2 / span 3;
     }
 
 .work-images img:nth-child(3) {
-    display: grid;
+    
     grid-row: 2 / span 2;
     grid-column: 1fr / 1fr;
     }
 
 .work-images img:nth-child(4) {
-    display: grid;
+    
     grid-row: 2  / span 2;
     grid-column: 2fr / 2fr ;
     }
 
 .work-images img:nth-child(5) {
-    display: grid;
+  
     grid-row: 2 / span 2;
     grid-column: 3fr / 3fr ;
     }
