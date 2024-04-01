@@ -29,5 +29,62 @@ ul {
     list-style: none;
     align-items: center;
     justify-content: space-between;
-
 }
+
+/*My Work section
+Place all content within this section in a wrapper that has a max-width of 940px and center in the middle of the page.
+Set a max width on the heading and introduction text for the section and align the text in the center.
+Place all images in that section in a grid using grid areas.*/
+#work {
+    max-width: 940px;
+    text-align: center;
+}
+
+.work-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
+.work-images img:nth-child(1) {
+display: grid;
+grid-row: 1 / 1;
+grid-column: 1 / span 1;
+} 
+
+.work-images img:nth-child(2) {
+    display: grid;
+    grid-row: 1 / 1;
+    grid-column: 2 / span 2;
+    }
+
+.work-images img:nth-child(3) {
+    display: grid;
+    grid-row: 2 / span 2;
+    grid-column: 1fr / 1fr;
+    }
+
+.work-images img:nth-child(4) {
+    display: grid;
+    grid-row: 2  / span 2;
+    grid-column: 2fr / 2fr ;
+    }
+
+.work-images img:nth-child(5) {
+    display: grid;
+    grid-row: 2 / span 2;
+    grid-column: 3fr / 3fr ;
+    }
+
+/*Footer
+  Apply a black background and change text to display as white.
+  Align text in the middle.*/
+
+  .foot-wrapper {
+    color: white;
+    background-color: black;
+    background-size: 100%;
+    text-align: middle;
+    text-align: center;
+    
+  }
