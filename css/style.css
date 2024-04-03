@@ -41,24 +41,25 @@ header .wrapper {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
 }
-/* header .wrapper {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    flex
-} */
 
 /* Change the navigation items to line up beside one another. */
 
 ul {
     display: flex;
+
+
+
+    /* display: flex;
     flex-direction: row;
     list-style: none;
     align-items: center;
-    justify-content: space-between;
+    padding: 0em; */
 }
-
+li {
+    padding-left: 1em;
+}
 /* Add space in between each navigation link.
 Align the name and navigation.  
 -------------------------------------------*/
