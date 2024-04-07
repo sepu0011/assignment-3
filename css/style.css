@@ -46,19 +46,36 @@ header .wrapper {
 
 /* Change the navigation items to line up beside one another. */
 
+.wrapper span {
+    line-height: 3.4;
+}
+
 ul {
     display: flex;
-
-
-
-    /* display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
-    padding: 0em; */
+   align-content: flex-end;
+   
 }
 li {
+    display: flex;
+   align-content: flex-end;
     padding-left: 1em;
+    justify-content: space-between;
+    a:visited { text-decoration: none; color:white; }
+    a:hover { text-decoration: none; color:white; }
+    a:hover, a:active { text-decoration: none; color:none; }
+    /* making sure the is no underline for the list */
+    a:link { 
+        text-decoration: none; 
+      } 
+      a:visited { 
+        text-decoration: none; 
+      } 
+      a:hover { 
+        text-decoration: none; 
+      } 
+      a:active { 
+        text-decoration: none; 
+      }
 }
 /* Add space in between each navigation link.
 Align the name and navigation.  
@@ -87,28 +104,57 @@ Apply a grayscale filter of 70%. */
     Use flexbox properties to center the text both horizontally and vertically in the middle of the hero section. */
 
 #hero h1 {
-    /* display: flex;
-    align-items: flex-end;
-    justify-content: center; */
-    font-size: 40pt;
-    padding: 10px 100p;
-    /* padding-right: 35px; */
+    
+    font-size: 46pt;
+    padding: 10px 120px;
     max-width: 60%;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-shadow: 5px 5px 10px black; 
 }
+/*------------------------------------------------
+Services section
+Place all content within this section in a wrapper that has a max-width of 940px and center in the middle of the page.
+Set the section background color to #fafafa.
+Set a max width on the heading and align the text in the center. */
+
+#services {
+    
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fafafa;
+}
+
+#services h2 {
+    max-width: 400px;
+    line-height: 1.4;
+    font-size: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Use grid to create a three column grid where all columns are evenly distributed.
+Add a gap in between each column.
+Apply flexbox to the article and change the direction to be column. By applying flexbox you now have additional properties available to you. */
+
+#services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    column-gap: 10px;
+}
 
 
-
-/*My Work section
+/*----------------------------------------
+My Work section
 Place all content within this section in a wrapper that has a max-width of 940px and center in the middle of the page.*/
 .workdes {
     display: grid;
     max-width: 940px;
     text-align: center;
     align-items: center;
-    justify-content: centerx    ;
+    justify-content: center;
     object-position: center;
 }
 /* Set a max width on the heading and introduction text for the section and align the text in the center.*/
@@ -131,6 +177,7 @@ Place all content within this section in a wrapper that has a max-width of 940px
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
+    padding-bottom: 30px;
 }
 
 .work-images img:nth-child(1) {
@@ -163,7 +210,8 @@ Place all content within this section in a wrapper that has a max-width of 940px
     grid-column: 5 / 7 ;
     }
 
-/*Footer
+/*---------------------------------------
+Footer
   Apply a black background and change text to display as white.
   Align text in the middle.*/
 
@@ -173,5 +221,7 @@ Place all content within this section in a wrapper that has a max-width of 940px
     background-size: 100%;
     text-align: middle;
     text-align: center;
+    line-height: 2.0;
+    padding-top: 5px;
     
   }
