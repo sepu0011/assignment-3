@@ -136,15 +136,56 @@ Set a max width on the heading and align the text in the center. */
 
 /* Use grid to create a three column grid where all columns are evenly distributed.
 Add a gap in between each column.
+
 Apply flexbox to the article and change the direction to be column. By applying flexbox you now have additional properties available to you. */
 
-#services {
+#services .article-list{
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr ;
     column-gap: 10px;
+
 }
 
+.btn {
+    display: flex;
+    flex-direction: column;
+    color: red;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+#services article {
+
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+  }
+
+.article-list article:nth-child(1){
+    color: green;
+}
+
+.article-list article:nth-child(2){
+    color: green;
+}
+
+.article-list article:nth-child(3){
+    color: green;
+}
+
+
+/* #service-1 {
+
+    /display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+
+
+    display: flex;
+    flex-direction: row;
+} */
 
 /*----------------------------------------
 My Work section
