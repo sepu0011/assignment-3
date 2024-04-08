@@ -138,7 +138,7 @@ Text for the section should be in the center (with space on top and bottom) but 
     
 }
 #about-me-container h2{
-    font-size: 28pt;
+    font-size: 40pt;
 }
 .about-me-n1 {
     margin: 100px 0 0 100px;
@@ -151,7 +151,7 @@ Text for the section should be in the center (with space on top and bottom) but 
     padding: 0 ;
     border: 0;
     width: 30%;
-    height: 30%;
+    height: 10%;
 }
 
 /*------------------------------------------------
@@ -162,24 +162,22 @@ Set a max width on the heading and align the text in the center. */
 
 #services {
     display: flex;
-    margin-top: 0;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 940px;
     background-color: #fafafa;
-    color: orange;
-    /* padding-left: 200px; */
-    margin-left: 300px;
-    padding: 0;
+    padding: 50px 300px 80px 300px;
+    margin: 0 0 0 0;
+
     
 }
 
 #services h2 {
-    max-width: 400px;
-    line-height: 1.4;
-    font-size: 20pt;
-    margin-left: auto;
-    margin-right: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 40pt;
+   /* padding: 50px 300px 80px 300px; */
 }
 
 /* Use grid to create a three column grid where all columns are evenly distributed.
@@ -188,37 +186,38 @@ Add a gap in between each column.
 Apply flexbox to the article and change the direction to be column. By applying flexbox you now have additional properties available to you. */
 
 #services .article-list{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
-    column-gap: 50px;
     display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 1200px;
 }
 
-/* trying to decrease padding between h3 and p */
-#services .article-list h3 {
-
-    margin-bottom: 0;
-    /* color: blue; */
-
+.service-1 {
+    /* border: 10px solid purple; */
+    background-color: red;
+    padding: 0 20px 80px 20px ;
 }
 
-#services .article-list p {
-
-    margin-top: 10px;
-    /* color: blue; */
-
+.service-2 {
+    background-color: white;
+    padding: 0 20px 20px 20px 
 }
+
+.service-3 {
+    background-color: white;
+    padding: 0 20px 20px 20px 
+}
+
 
 /* I need to align the buttons */
 .btn {
-    
-    display: flex;
-    flex-direction: column;
-    /* color: red; */
-    justify-content: end;
-    align-items: flex-end;
+
+    color: white;
+    background-color: black;
+    margin: 120px 5px 5px 5px;
+    padding: 15px 20px 20px 20px; 
+    text-align: center;
+
 
 }
 
@@ -242,6 +241,7 @@ Place all content within this section in a wrapper that has a max-width of 940px
 }
 .workdes h2 {
     margin-top: 70px;
+    font-size: 30pt;
 }
 
 /*Place all images in that section in a grid using grid areas. */
