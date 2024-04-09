@@ -38,8 +38,8 @@ header .wrapper {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
 }
+
 header span {
     display: flex;
     justify-content: flex-start;  
@@ -56,8 +56,8 @@ header span {
 ul {
     display: flex;
    align-content: flex-end;
-   
 }
+
 li {
     display: flex;
    align-content: flex-end;
@@ -66,7 +66,7 @@ li {
     a:visited { text-decoration: none; color:white; }
     a:hover { text-decoration: none; color:white; }
     a:hover, a:active { text-decoration: none; color:white; }
-    /* making sure the is no underline for the list */
+    /* making sure there is no underline for the list */
     a:link { 
         text-decoration: white; 
       } 
@@ -79,13 +79,10 @@ li {
       a:active { 
         text-decoration: white; 
       }
+
 }
-/* Add space in between each navigation link.
-Align the name and navigation.  
--------------------------------------------*/
-
-/* Hero section
-
+/* ----------------------------------
+Hero section
 Set the height of the section to 600px.
 Add a background image to the section and adjust properties so that it covers the entire area and the focal point is in the center of the image.
 Apply a grayscale filter of 70%. */
@@ -100,6 +97,7 @@ Apply a grayscale filter of 70%. */
     background-size: cover;
     filter: grayscale(70%);
 }
+
     /* 
     Set your h1 text to have a max-width of 60%.
     Add a black background color to your h1 text using rgba so that the opacity of the color is set to 50%.
@@ -107,7 +105,6 @@ Apply a grayscale filter of 70%. */
     Use flexbox properties to center the text both horizontally and vertically in the middle of the hero section. */
 
 #hero h1 {
-    
     font-size: 46pt;
     padding: 10px 120px;
     max-width: 60%;
@@ -128,7 +125,6 @@ Text for the section should be in the center (with space on top and bottom) but 
     max-width: 940px;
     justify-content: center;
     align-items: center;
-    
 }
 
 .about-me-items {
@@ -136,11 +132,12 @@ Text for the section should be in the center (with space on top and bottom) but 
     flex-direction: row;
     justify-content: center;
     gap: 0;
-    
 }
+
 #about-me-container h2{
     font-size: 40pt;
 }
+
 .about-me-n1 {
     margin: 100px 0 0 100px;
     padding: 0 0 0 100px;
@@ -176,7 +173,6 @@ Set a max width on the heading and align the text in the center. */
    justify-content: center;
    align-items: center;
    font-size: 40pt;
-   /* padding: 50px 300px 80px 300px; */
 }
 
 /* Use grid to create a three column grid where all columns are evenly distributed.
@@ -188,7 +184,7 @@ Apply flexbox to the article and change the direction to be column. By applying 
     display: flex;
     flex-direction: row;
     gap: 20px;
-    /* max-width: 940px; THIS DEFORMS MY BOXES*/
+    /* max-width: 940px; USING THIS DEFORMS MY BOXES*/
     background-color: #fafafa;
 }
 
@@ -196,7 +192,7 @@ Apply flexbox to the article and change the direction to be column. By applying 
     background-color: white;
     padding: 0 20px 20px 20px;
     width: 380px;
-    
+
 }
 
 .service-2 {
@@ -252,21 +248,6 @@ Apply flexbox to the article and change the direction to be column. By applying 
     text-decoration: none;
 }
 
-/* I need to align the buttons */
-/* .btn {
-    display: flex;
-    flex-direction: column;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    padding: 15px 20px 20px 20px; 
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin: 100px 500px 0 0;
-    content: 5px 20px 5px 10px;
-    width: 100px;
-}  */
-
 /*----------------------------------------
 My Work section
 Place all content within this section in a wrapper that has a max-width of 940px and center in the middle of the page.*/
@@ -283,11 +264,13 @@ Place all content within this section in a wrapper that has a max-width of 940px
     max-width: 90%;
     text-align: center;
     align-items: center;
-    
+
 }
+
 .workdes h2 {
     margin-top: 70px;
     font-size: 30pt;
+
 }
 
 /*Place all images in that section in a grid using grid areas. */
@@ -297,6 +280,7 @@ Place all content within this section in a wrapper that has a max-width of 940px
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
     padding-bottom: 30px;
+
 }
 
 .work-images img:nth-child(1) {
@@ -337,10 +321,9 @@ Footer
   .foot-wrapper {
     color: white;
     background-color: black;
-    text-align: middle;
     text-align: center;
     line-height: 2.0;
     margin-top: 15px;
     padding: 10px 10px 10px 10px;
-    
+
   }
